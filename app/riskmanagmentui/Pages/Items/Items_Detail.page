@@ -1,0 +1,61 @@
+{
+	"Caption": "Items Detail",
+	"DesignTimeTarget": {
+		"Service": "/riskmanagmentui/Services/service1.service",
+		"EntitySet": "Items",
+		"QueryOptions": ""
+	},
+	"ActionBar": {
+		"Items": []
+	},
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"ObjectHeader": {
+						"Tags": [],
+						"DetailImage": "",
+						"HeadlineText": "{ID}",
+						"Subhead": "{MaterialCode}",
+						"BodyText": "",
+						"Footnote": "{purchaseOrders_ID}",
+						"Description": "{MaterialDesc}",
+						"StatusText": "",
+						"StatusImage": "",
+						"SubstatusImage": "",
+						"SubstatusText": ""
+					},
+					"_Type": "Section.Type.ObjectHeader"
+				},
+				{
+					"KeyAndValues": [
+						{
+							"KeyName": "MaterialCode",
+							"Value": "{MaterialCode}"
+						},
+						{
+							"KeyName": "MaterialDesc",
+							"Value": "{MaterialDesc}"
+						},
+						{
+							"KeyName": "purchaseOrders_ID",
+							"Value": "{purchaseOrders_ID}"
+						}
+					],
+					"Layout": {
+						"NumberOfColumns": 2
+					},
+					"MaxItemCount": 1,
+					"_Name": "SectionKeyValue0",
+					"_Type": "Section.Type.KeyValue"
+				}
+			],
+			"DataSubscriptions": [],
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable"
+		}
+	],
+	"_Type": "Page",
+	"_Name": "Items_Detail",
+	"PrefersLargeCaption": true
+}

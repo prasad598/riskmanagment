@@ -1,0 +1,77 @@
+{
+	"Caption": "Items",
+	"ActionBar": {
+		"Items": []
+	},
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"Header": {
+						"UseTopPadding": false
+					},
+					"ObjectCell": {
+						"AccessoryType": "disclosureIndicator",
+						"Description": "{MaterialDesc}",
+						"AvatarStack": {
+							"Avatars": [
+								{
+									"Image": ""
+								}
+							],
+							"ImageIsCircular": false
+						},
+						"Icons": [],
+						"OnPress": "/riskmanagmentui/Actions/Items/NavToItems_Detail.action",
+						"StatusImage": "",
+						"Title": "{ID}",
+						"Footnote": "{purchaseOrders_ID}",
+						"PreserveIconStackSpacing": false,
+						"StatusText": "",
+						"Subhead": "{MaterialCode}",
+						"SubstatusText": ""
+					},
+					"EmptySection": {
+						"Caption": "No record found!"
+					},
+					"Search": {
+						"Enabled": true,
+						"Placeholder": "Item Search",
+						"BarcodeScanner": true,
+						"Delay": 500,
+						"MinimumCharacterThreshold": 3
+					},
+					"DataPaging": {
+						"ShowLoadingIndicator": true,
+						"LoadingIndicatorText": "Loading more items, please wait..."
+					},
+					"Target": {
+						"EntitySet": "Items",
+						"Service": "/riskmanagmentui/Services/service1.service",
+						"QueryOptions": ""
+					},
+					"_Type": "Section.Type.ObjectTable"
+				}
+			],
+			"LoadingIndicator": {
+				"Enabled": true,
+				"Text": "Loading, please wait..."
+			},
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable"
+		}
+	],
+	"_Type": "Page",
+	"ToolBar": {
+		"Items": [
+			{
+				"_Name": "LogoutToolbarItem",
+				"_Type": "Control.Type.ToolbarItem",
+				"Caption": "Logout",
+				"OnPress": "/riskmanagmentui/Actions/Logout.action"
+			}
+		]
+	},
+	"_Name": "Items_List",
+	"PrefersLargeCaption": true
+}

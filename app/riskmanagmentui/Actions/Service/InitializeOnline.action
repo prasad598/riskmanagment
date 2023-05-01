@@ -1,0 +1,10 @@
+{
+    "Service": "/riskmanagmentui/Services/service1.service",
+    "_Type": "Action.Type.ODataService.Initialize",
+    "ShowActivityIndicator": true,
+    "OnSuccess": "/riskmanagmentui/Actions/Service/InitializeOnlineSuccessMessage.action",
+    "OnFailure": "/riskmanagmentui/Actions/Service/InitializeOnlineFailureMessage.action",
+    "ActionResult": {
+        "_Name": "init"
+    }
+}
